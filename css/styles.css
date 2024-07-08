@@ -37,76 +37,76 @@ aside {
 
 /* 
 Use Descendant Combinator selector
-Give all h2 descendants of elements with a class name of "container" the following CSS Rule
-{
+Give all h2 descendants of elements with a class name of "container" the following CSS Rule */
+.container {
   color: #2c3e50;
 }
-*/
+
 
 /* 
 Use Child Combinator selector
-Give all ul elements that are direct children of nav elements the following CSS Rule
-{
+Give all ul elements that are direct children of nav elements the following CSS Rule 8 */
+nav > ul {
   list-style-type: none;
   padding: 0;
 }
-*/
+
 
 /* 
 Use Child Combinator selector
-Give all li elements that are direct children of ul elements (that are direct children of nav elements) the following CSS Rule
-{
+Give all li elements that are direct children of ul elements (that are direct children of nav elements) the following CSS Rule */
+nav > ul > li {
   display: inline-block;
   margin: 0 10px;
 }
-*/
+
 
 /* 
 Use General Sibling Combinator selector
-Give all section elements that are general siblings (i.e. come after, on the same level) of other section elements the following CSS Rule
-{
+Give all section elements that are general siblings (i.e. come after, on the same level) of other section elements  the following CSS Rule */
+section ~ section {
   border-top: 1px solid #ddd;
 }
-*/
+
 
 /* 
 Use Adjacent Sibling Combinator selector
-Give all p elements that are adjacent siblings (i.e. come immediately after, on the same level) of other h2 elements the following CSS Rule
-{
+Give all p elements that are adjacent siblings (i.e. come immediately after, on the same level) of other h2 elements the following CSS Rule */
+h2 + p {
   font-weight: bold;
 }
-*/
+
 
 /* ------------------------ BONUS ----------------- */
 /* 
 Use the Hover Pseudo-class selector
-When anchor elements are hovered, give them the following CSS Rule
-{
+When anchor elements are hovered, give them the following CSS Rule */
+a:hover {
   color: #3498db;
   text-decoration: underline;
 }
-*/
+
 
 /* 
 Use a First-of-type Pseudo-class selector
-Give the first p element of its type among children elements of sections the following CSS Rule
-{
+Give the first p element of its type among children elements of sections the following CSS Rule */
+section p:first-of-type {
   color: #e74c3c;
 }
-*/
+
 
 /* 
 Use a Last-child Pseudo-class selector
-Give the last of the li elements that are children of uls the following CSS Rule
-{
+Give the last of the li elements that are children of uls the following CSS Rule */
+ul li:last-child {
   font-style: italic;
 }
-*/
+
 
 /* 
 Use a Last-of-type Pseudo-class selector
-Give the last p element of its type among children elements of sections the following CSS Rule
-{
+Give the last p element of its type among children elements of sections the following CSS Rule */
+section p:last-of-type {
   color: #8e44ad;
 }
-*/
+
